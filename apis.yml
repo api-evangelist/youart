@@ -1,8 +1,30 @@
 aid: youart
 name: Youart
-description: Youart is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  YouArt is an all-in-one AI creative studio out of Y Combinator (founded 2025,
+  San Francisco), positioned as "Patreon for AI Originals." It lets creators
+  browse and run 60+ leading image, video, audio, and text-to-speech models —
+  GPT Image 2, Nano Banana, Seedream, Sora 2, Kling, Veo 3, ElevenLabs v3, Suno —
+  or compose them into multi-model, node-based creative workflows on a canvas.
+  Agents and developers connect over a hosted, OAuth-secured Model Context
+  Protocol (MCP) server to generate images, video, and audio and assemble
+  workflows from chat, sharing the same account, credits, and projects as the
+  web application. Creators can also launch original AI films and series, get
+  funded directly by fans, and earn subscription revenue.
 url: https://raw.githubusercontent.com/api-evangelist/youart/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://youart.ai/opengraph-image.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +33,68 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Generative AI
+- Image Generation
+- Video Generation
+- Text to Speech
+- Creative Tools
+- Model Context Protocol
+- AI Agents
+- Y Combinator
+apis:
+- name: YouArt MCP & Model Platform
+  description: >-
+    Hosted, OAuth-secured Model Context Protocol (MCP) server that gives AI
+    agents access to YouArt's catalog of 60+ image, video, audio, and TTS
+    models plus its node-based workflow builder, asset library, and project
+    management — the same account, credits, and projects as the web app.
+  humanURL: https://youart.ai/mcp
+  baseURL: https://mcp.youart.ai
+  tags:
+  - MCP Server
+  - Generative AI
+  - Model Catalog
+  properties:
+  - type: MCPServer
+    url: mcp/youart-mcp.yml
+  - type: LLMsTxt
+    url: llms/youart-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/youart-domain-security.yml
+- type: Website
+  url: https://youart.ai
+- type: DeveloperPortal
+  url: https://youart.ai/mcp
+- type: Documentation
+  url: https://youart.ai/model
+- type: APIReference
+  url: https://youart.ai/model
+- type: Pricing
+  url: https://youart.ai/pricing
+- type: TermsOfService
+  url: https://youart.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://youart.ai/privacy-policy
+- type: Support
+  url: https://youart.typeform.com/enterprise
+- type: MCPServer
+  url: mcp/youart-mcp.yml
+- type: LLMsTxt
+  url: llms/youart-llms.txt
+- type: Authentication
+  url: authentication/youart-authentication.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

@@ -1,0 +1,93 @@
+# YouArt
+
+> YouArt is an all-in-one AI creative studio: browse and run the latest AI models for image, video, audio, and text generation, or compose them into multi-model workflows.
+
+Every model below has a detail page with specs, pricing, and FAQs. The full catalog lives at https://youart.ai/model.
+
+## Image Models
+
+- [GPT Image 2](https://youart.ai/model/gpt-image-2): OpenAI's latest image generation model with improved quality and prompt adherence. Supports text-to-image and image editing with up to 16 reference images. Offers custom dimensions, multiple quality tiers, and flexible aspect ratios.
+- [Nano Banana](https://youart.ai/model/nano-banana): Lightweight and fast model for rapid image generation and editing. Features auto aspect ratio detection and supports multiple output formats including WebP. Supports both creation and editing modes with image and prompt inputs.
+- [Nano Banana Pro](https://youart.ai/model/nano-banana-pro): Google's state-of-the-art image generation and editing model (Nano Banana 2). Features enhanced quality with resolution options up to 4K and comprehensive aspect ratio support. Supports both creation and editing modes with image and prompt inputs.
+- [Nano Banana 2](https://youart.ai/model/nano-banana-2): Google Gemini 3.1 Flash Image. Fast, high-quality image generation with 1K/2K/4K resolution. Optimized for speed and throughput.
+- [Nano Banana 2 Lite](https://youart.ai/model/nano-banana-2-lite): Google Gemini 3.1 Flash Lite Image. Fastest, most cost-efficient Nano Banana model. 1K output only. Best for rapid ideation and high-volume workflows; not optimized for heavy multi-reference editing.
+- [Seedream 3.0](https://youart.ai/model/seedream-v3): Fast, high-quality text-to-image generation with custom dimensions up to 2048px. Features flexible guidance controls and safety checking for content moderation. Uses text prompts only (no image inputs).
+- [Seedream 4.0](https://youart.ai/model/seedream-v4): Enhanced quality image generation with editing capabilities. Supports ultra-high resolutions up to 4K with auto-sizing options. Can generate up to 10 images per run. Supports both creation and editing modes with image and prompt inputs.
+- [Seedream 5.0 Pro](https://youart.ai/model/seedream-v5-pro): ByteDance Seedream 5.0 Pro via WaveSpeed: native 1K/2K output with strong prompt adherence. Edit mode supports up to 10 reference images; extra reference images incur additional credits.
+- [Seedream 5.0 Lite](https://youart.ai/model/seedream-v5): ByteDance Seedream 5.0 Lite: fast, high-quality text-to-image and multi-reference editing up to 3072px. Supports up to 6 images per run and up to 10 reference images in edit mode.
+- [OpenAI Image](https://youart.ai/model/gpt-image-1): Generates high-quality images with excellent prompt understanding. Supports both text-to-image creation and image editing. Can generate up to 4 variations per run. Works standalone with text prompts or accepts image inputs for editing.
+- [Flux Kontext](https://youart.ai/model/flux-kontext): Advanced image generation model with Flux Kontext architecture. Excels at photorealistic outputs and supports inpainting. Offers flexible aspect ratios and safety controls. Works standalone or with image inputs.
+- [Grok Image](https://youart.ai/model/grok-imagine): xAI Grok Image generation via KIE. Text-to-image returns up to 4 candidates per task; choose how many to keep with Num Images (default 1). Image-to-image accepts one reference image.
+- [FLUX 2](https://youart.ai/model/flux-2): Black Forest Labs FLUX 2 on WaveSpeed: text-to-image and image editing. Choose Max, Pro, or Turbo quality tiers. Edit mode accepts multiple reference images (up to 3 for Max/Pro, up to 4 for Turbo). Size uses width*height pixel format.
+- [ImageGen 4](https://youart.ai/model/google-imagegen4): High-fidelity text-to-image generation with precise detail control. Supports negative prompts and offers 1K/2K resolution options with multiple aspect ratios. Uses text prompts only (no image inputs).
+- [Stable Diffusion v3.5](https://youart.ai/model/stable-diffusion-v35): Versatile text-to-image generation with customizable guidance scale and inference steps. Features negative prompts and built-in safety checker for content moderation. Uses text prompts only (no image inputs).
+- [Qwen Image](https://youart.ai/model/qwen-image): Strong text-to-image generation with editing support. Features customizable strength, inference steps, and acceleration modes for speed/quality tradeoffs. Supports both creation and editing modes with image and prompt inputs.
+- [Z-Image Turbo](https://youart.ai/model/z-image-turbo): Lightweight fast text-to-image model with bilingual Chinese/English prompt rendering. Supports flexible resolutions and aspect ratios. Uses text prompts only.
+- [Midjourney](https://youart.ai/model/midjourney-text-to-image): One of the world's most advanced AI art generation systems. Produces highly detailed, imaginative visuals with strong artistic interpretation. Features stylization control, chaos for variation, and weird for surreal effects. Uses text prompts only (no image inputs).
+- [Midjourney v8.1](https://youart.ai/model/midjourney-v8-1): Midjourney v8.1 on Youchuan: the latest full upgrade with much stronger prompt adherence, richer detail, and native 2K HD rendering (--hd outputs four high-res images per task, ~5x faster than the previous generation). Text-to-image and image-prompted generation. Two reference channels: Image Promp…
+
+## Video Models
+
+- [Happy Horse](https://youart.ai/model/happy-horse): Generate 1080p video with synchronized native audio from a text prompt or first frame. Supports text-to-video and image-to-video with flexible aspect ratios. Built-in safety checker and 720p/1080p resolution options.
+- [Happy Horse Reference](https://youart.ai/model/happy-horse-ref): Reference-to-video generation with up to 9 reference images. Reference subjects from connected images using character1, character2, ..., character9 in your prompt (order matches input slots). Supports flexible aspect ratios and 720p/1080p resolution.
+- [Happy Horse Edit](https://youart.ai/model/happy-horse-edit): Edit a source video with a text prompt and optional reference images. Output duration follows the input video (capped at 15s). Supports 720p/1080p resolution and configurable audio handling (auto regenerate or preserve original).
+- [Seedance 2.0](https://youart.ai/model/seedance-2-0-pro-stable): Strongest video generation model with native audio, 4-15 second duration, and high-quality 720p/1080p output. Supports text-to-video, image-to-video, and first+last frame modes with improved reliability and lower queue times.
+- [Seedance 2.0 Omni Reference](https://youart.ai/model/seedance-2-0-pro-omni-stable): Strongest omni-reference video generation. Use @Image1, @Video1, @Audio1 in your prompt to describe each material's role. Supports up to 9 images, 3 videos, and 3 audio clips with improved reliability and lower queue times.
+- [Seedance 2.0 Video Extend](https://youart.ai/model/seedance-2-0-video-extend): Extend an existing video by 4 to 15 seconds with Seedance 2.0. The continuation starts from the input video's final frame, preserves its original audio, and returns one combined extended video.
+- [Seedance 2.0 Mini](https://youart.ai/model/seedance-2-0-mini): Lightweight Seedance 2.0 for high-volume use. Same omni-reference toolkit (up to 9 images, 3 videos, 3 audio) at lower cost and faster generation. Use @Image1, @Video1, @Audio1 in your prompt. Outputs 480p / 720p.
+- [Seedance v1.5 Pro](https://youart.ai/model/seedance-1-5-pro): ByteDance's enhanced video generation model with 4-12 second duration support and audio generation. Supports text-to-video and image-to-video modes with flexible aspect ratios and resolutions. Features camera control and optional audio generation.
+- [Grok Video v1.5](https://youart.ai/model/grok-imagine-video-1-5-preview): xAI Grok Video v1.5 image-to-video generation via KIE. Animates one starting image into a short video with native audio, realistic motion, and 480p/720p output.
+- [Sora 2](https://youart.ai/model/sora-2-t2v): Advanced text-to-video and image-to-video generation with durations up to 12 seconds. Features strong temporal consistency and motion understanding in 720p resolution.
+- [Sora 2 Pro](https://youart.ai/model/sora-2-pro-t2v): Professional-grade video generation with physics-aware motion and synchronized audio. Offers superior consistency and detail.
+- [Hailuo 02](https://youart.ai/model/hailuo-02): Simple and efficient video generation with built-in prompt optimizer. Supports 6-10 second durations with start and end frame control for motion interpolation. Accepts prompt, first frame, and end frame inputs.
+- [Hailuo v2.3](https://youart.ai/model/hailuo-2-3): Advanced video generation from MiniMax with enhanced prompt optimization. Supports text-to-video and image-to-video modes with 768p/1080p resolution options. Choose Fast mode for quicker generation (requires image input) or Pro mode for highest quality.
+- [Kling v3.0](https://youart.ai/model/kling-v3-0): Latest Kling video generation with native audio-video co-generation. Creates synchronized sound effects and ambient audio alongside cinematic visuals. Supports 3-15 second durations with flexible aspect ratios (16:9, 9:16, 1:1) and Standard (720P), Pro (1080P), or 4K output. Accepts prompt, first f…
+- [Kling O3](https://youart.ai/model/kling-o3): Kling 3.0-Omni video generation. Supports text-to-video and image-to-video with multi-shot storyboarding (3-15s). Native audio generation not available. Choose Standard (720P), Pro (1080P), or 4K quality.
+- [Kling O3 Reference](https://youart.ai/model/kling-o3-reference): Kling 3.0-Omni subject and frame reference video generation. Use reference images as subjects (@Image1) or start/end frames. Supports up to 4 reference images and 3 elements. Choose Standard (720P), Pro (1080P), or 4K quality. Optional native audio is available.
+- [Kling O3 Video Reference](https://youart.ai/model/kling-o3-video-reference): Kling 3.0-Omni video reference generation. Provide a reference video (3-10s) as stylistic/motion guide alongside optional reference images and elements. Choose Standard (720P), Pro (1080P), or 4K quality.
+- [Kling O1 Frames](https://youart.ai/model/kling-o1-frames): Generate video from keyframes using Kling O1. First frame is required, end frame is optional for video interpolation. Creates smooth transitions between frames with natural motion.
+- [Kling O1 Elements](https://youart.ai/model/kling-o1-elements): Generate video using reference elements (characters/objects) and images with Kling O1. Reference elements as @ElementName and images as @Image1, @Image2 in your prompt.
+- [Kling O1 Video Reference](https://youart.ai/model/kling-o1-video-reference): Extend or create variations of existing video using Kling O1. Takes a reference video and generates the next shot or variation with optional elements and images. Use @ElementName and @Image1 in your prompt.
+- [Kling O1 Transformation](https://youart.ai/model/kling-o1-transformation): Transform video content using Kling O1. Replace characters or elements in video while maintaining the same movements and camera angles. Use @ElementName and @Image1 in your prompt to specify replacements.
+- [Kling v3.0 Motion Control](https://youart.ai/model/kling-v3-motion-control): Generate video by applying motion from a reference video to a reference person image. Defaults to Pro (1080P); optionally choose Standard (720P). The character's movements follow the reference video while preserving the person's appearance. When Face Element is connected, reference it in the prompt…
+- [Kling v2.6](https://youart.ai/model/kling-v2-6): State-of-the-art video generation with native audio-video co-generation. Creates synchronized voiceovers, sound effects, and ambient sounds alongside cinematic visuals. Supports 5-10 second durations with flexible aspect ratios (16:9, 9:16, 1:1). Accepts prompt and first frame inputs.
+- [Kling v2.6 Motion Control](https://youart.ai/model/kling-v2-6-motion-control): Transfer motion from a reference video onto a character image. Upload a character image and a motion clip (dance, walk, gesture), and the model applies the movement to your subject while preserving identity and temporal consistency. Supports audio preservation and flexible output framing.
+- [Kling v2.5 Turbo](https://youart.ai/model/kling-v2-5-turbo): Fast video generation with start and end frame control. Supports both text-to-video and image-to-video modes with flexible aspect ratios (16:9, 9:16, 1:1). Accepts optional first and last frame inputs for precise animation control.
+- [Kling v2.1](https://youart.ai/model/kling-v2-1): High-quality video generation with adjustable CFG scale for motion control. Supports 5-10 second durations with flexible aspect ratios (16:9, 9:16, 1:1). Accepts prompt and first frame inputs.
+- [Kling v2.1 Pro](https://youart.ai/model/kling-v2-1-pro): Professional-grade image-to-video generation with enhanced visual fidelity. Requires a start frame image, optionally accepts an end frame for controlled transitions. Supports 5-10 second durations with CFG scale for motion control.
+- [Wan v2.6](https://youart.ai/model/wan-v2-6): Alibaba's WAN 2.6 generates 5-15 second cinematic clips with multi-shot storytelling support and up to 1080p resolution. Supports both text-to-video and image-to-video modes with prompt expansion.
+- [Wan v2.2](https://youart.ai/model/wan-v2-2): Professional video generation with extensive control over frames, FPS, and quality settings. Supports up to 161 frames with customizable video quality (low to maximum) and optional prompt expansion. Accepts prompt and first frame inputs.
+- [Vidu Text to Video](https://youart.ai/model/vidu-2-0): Text-to-video generation with adjustable movement amplitude control. Supports 1-10 second durations in 540p/720p/1080p resolution with customizable motion intensity (auto, small, medium, large).
+- [Vidu Reference to Video](https://youart.ai/model/vidu-reference-to-video-2-0): Multi-reference image to video generation. Uses 1-7 reference images to guide video creation with consistent characters or objects. Features movement amplitude control for motion intensity.
+- [Vidu Start-End to Video](https://youart.ai/model/vidu-start-end-to-video-2-0): Video interpolation between start and end frames. Creates smooth motion transitions between two keyframes with controllable movement amplitude for natural animation effects.
+- [Vidu Image to Video](https://youart.ai/model/vidu-image-to-video-q2-pro): Image-to-video conversion with turbo and pro quality tiers. Animates still images with adjustable movement amplitude for realistic or stylized animations.
+- [Vidu Q3](https://youart.ai/model/vidu-q3): Vidu Q3 video generation with text-to-video and image-to-video modes. Supports 1-16 second durations in 540p/720p/1080p with optional audio generation and motion control.
+- [Seedance v1](https://youart.ai/model/seedance-v1): Versatile video generation with resolutions up to 1080p and durations from 3-12 seconds. Features camera control options including fixed camera mode and wide aspect ratio support. Accepts prompt and first frame inputs.
+- [Veo 2](https://youart.ai/model/veo2): Fast video generation with prompt enhancement. Supports durations from 5-8 seconds with 16:9 and 9:16 aspect ratios. Ideal for quick video prototyping. Accepts prompt and first frame inputs.
+- [Veo 3](https://youart.ai/model/veo3): High-quality video generation with prompt enhancement and auto-fix capabilities. Supports text-to-video and image-to-video with flexible aspect ratios (16:9, 9:16). Optional audio generation included. Accepts prompt and first frame inputs.
+- [Veo 3.1](https://youart.ai/model/veo3-1): Advanced video generation supporting text-to-video and image animation. Features start and end frame control for precise motion guidance. Supports 720p/1080p resolution with optional audio generation. Accepts prompt, first frame, and end frame inputs.
+- [Seedance 2.5 (coming soon)](https://youart.ai/model/seedance-2-5): ByteDance's next-generation AI video model: native 30-second clips at up to 4K, up to 50 multimodal references, multi-shot storytelling with consistent characters and synced audio. Coming soon to YouArt.
+
+## Audio Models
+
+- [Hailuo 02](https://youart.ai/model/minimax-music-02): AI music generation model that turns a style prompt + lyrics into a complete song. Describe the mood, genre, and vocal style, paste your lyrics, and the model produces fully arranged audio with vocals and backing instruments.
+- [Open Suno](https://youart.ai/model/suno-v5): Suno v5 turns text prompts into complete songs with vocals and instrumentation. In custom mode, provide style (genre/mood), title, and lyrics; the model produces broadcast-quality audio with natural vocal dynamics.
+
+## TTS Models
+
+- [ElevenLabs v3](https://youart.ai/model/elevenlabs-text-to-dialogue-v3): ElevenLabs v3 creates expressive multi-language text-to-dialogue with multi-voice support and natural, lifelike speech. Describe emotions in natural language (e.g. "he said excitedly") or use English tags like [excitedly]. Max 2000 characters and 10 unique voices per request (ElevenLabs API limit).
+
+## LLM Models
+
+- [Gemini 3.1 Pro](https://youart.ai/model/gemini-3-1-pro): Google's most capable reasoning model. Accepts text, images, video, and audio for detailed analysis, description, and content generation.
+- [Gemini 3 Flash](https://youart.ai/model/gemini-3-flash): Fast and capable model for text generation with multimodal understanding. Accepts text, images, video, and audio.
+
+## Pages
+
+- [AI Model Catalog](https://youart.ai/model): All image, video, audio, and text generation models on YouArt
+- [MCP Server](https://youart.ai/mcp): Connect Cursor, Claude, ChatGPT, and Codex to YouArt over the Model Context Protocol — generate images, video, and audio and build workflows from chat
+- [Pricing](https://youart.ai/pricing): Plans and credit pricing
+- [Seedance 2.0](https://youart.ai/seedance-2-0): Seedance 2.0 AI video generation
+- [Seedance 2.5](https://youart.ai/seedance-2-5): Seedance 2.5 AI video generation coming soon
+- [AI for E-commerce](https://youart.ai/ecommerce): AI product visuals for e-commerce
+- [Events](https://youart.ai/event): Community events and challenges

@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://youart.ai/mcp
+docs: https://youart.ai/mcp
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode]
+  api_key_in: []
+  notes: >-
+    YouArt does not publish a public REST API or API-key program; programmatic
+    access is delivered through its hosted MCP server, which authenticates via
+    OAuth (browser sign-in, no API keys). Unauthenticated JSON-RPC calls to the
+    MCP endpoint return HTTP 200 with {"error":"invalid_token"}.
+schemes:
+- name: youart_oauth
+  type: oauth2
+  applies_to: https://mcp.youart.ai/mcp
+  flows:
+  - flow: authorizationCode
+    notes: >-
+      Interactive browser OAuth sign-in on first MCP connect; the agent reuses
+      the creator's existing YouArt account, credits, and projects. Discrete
+      /.well-known/oauth-authorization-server and oauth-protected-resource
+      documents were not published at probe time (404).
+  sources: [https://youart.ai/mcp]
