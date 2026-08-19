@@ -4,28 +4,20 @@ status: published
 source: https://youart.ai/mcp
 server:
   name: youart
-  description: >-
-    Hosted Model Context Protocol server for YouArt. Lets AI clients generate
-    and edit images, create video and audio, and assemble multi-model creative
-    workflows using the same YouArt account, credits, and projects as the web
-    app.
-  transport: http            # Streamable HTTP
+  description: Hosted Model Context Protocol server for YouArt. Lets AI clients generate and edit images,
+    create video and audio, and assemble multi-model creative workflows using the same YouArt account,
+    credits, and projects as the web app.
+  transport: http
   url: https://mcp.youart.ai/mcp
   auth:
     type: oauth2
-    notes: >-
-      OAuth sign-in in the browser on first connect; no API keys. The server
-      returns {"error":"invalid_token","error_description":"Authentication
+    notes: OAuth sign-in in the browser on first connect; no API keys. The server returns {"error":"invalid_token","error_description":"Authentication
       required"} to unauthenticated JSON-RPC calls, confirming OAuth gating.
   clients:
   - Cursor
   - Claude
   - ChatGPT
   - Codex
-# Documented capability families (from https://youart.ai/mcp). The tool list is
-# not enumerable without an authenticated OAuth session, so individual tool
-# names are NOT asserted here to avoid fabrication — these are the published
-# capability categories the server exposes.
 capabilities:
 - name: image_generation
   description: Create and edit images with models such as Flux 2, GPT Image 2, Nano Banana, Seedream.
@@ -39,3 +31,10 @@ capabilities:
   description: Access the user's library of past generations and upload custom media.
 - name: project_management
   description: List and manage YouArt projects.
+deployment:
+  mode: remote
+  endpoint: https://mcp.youart.ai/mcp
+  verified: probed
+  probe: gated
+  checked: '2026-08-12'
+  source: catalog MCP census
