@@ -49,7 +49,7 @@ tags:
 - Company
 - Artificial Intelligence
 - Generative AI
-- Image-Generation
+- Image Generation
 - Video Generation
 - Text-to-Speech
 - Creative Tools
@@ -67,6 +67,7 @@ tags_raw:
 - Model Context Protocol
 - AI Agents
 - Y Combinator
+- Image-Generation
 apis:
 - name: YouArt MCP & Model Platform
   description: >-
